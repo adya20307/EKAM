@@ -1,0 +1,361 @@
+/* =========================================================
+   EKAM ADMIN DASHBOARD
+========================================================= */
+
+.admin-dashboard {
+  min-height: 100%;
+  padding: 34px;
+  box-sizing: border-box;
+  color: #172b4d;
+}
+
+/* Header */
+
+.admin-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.admin-dashboard-header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #17365f;
+}
+
+.admin-dashboard-header p {
+  margin: 8px 0 0;
+  color: #71809a;
+  font-size: 15px;
+}
+
+.admin-department-badge {
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #eef4ff;
+  border: 1px solid #d8e5ff;
+  color: #2865e8;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   STAT CARDS
+========================================================= */
+
+.admin-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.admin-stat-card {
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 16px;
+  padding: 21px;
+  box-shadow: 0 5px 18px rgba(28, 48, 80, 0.04);
+  transition: 0.2s ease;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(28, 48, 80, 0.08);
+}
+
+.admin-stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef3ff;
+  color: #2865e8;
+  font-size: 20px;
+}
+
+.admin-stat-card h3 {
+  margin: 18px 0 4px;
+  font-size: 29px;
+  color: #172f52;
+}
+
+.admin-stat-card p {
+  margin: 0;
+  color: #7a879b;
+  font-size: 13px;
+}
+
+/* =========================================================
+   CONTENT GRID
+========================================================= */
+
+.admin-content-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.admin-panel {
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 16px;
+  padding: 23px;
+  box-shadow: 0 5px 18px rgba(28, 48, 80, 0.035);
+}
+
+.admin-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-panel-header h2 {
+  margin: 0;
+  color: #17365f;
+  font-size: 19px;
+}
+
+.admin-panel-header span {
+  color: #7c899d;
+  font-size: 12px;
+}
+
+/* =========================================================
+   COMPLAINT LIST
+========================================================= */
+
+.admin-complaint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.admin-complaint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+  background: #fbfcfe;
+}
+
+.admin-complaint:hover {
+  border-color: #d8e3f5;
+  background: #f8faff;
+}
+
+.admin-complaint-info {
+  min-width: 0;
+}
+
+.admin-complaint-info strong {
+  display: block;
+  color: #263a57;
+  font-size: 14px;
+}
+
+.admin-complaint-info span {
+  display: block;
+  margin-top: 4px;
+  color: #8a96a8;
+  font-size: 12px;
+}
+
+.admin-status {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.admin-status.pending {
+  background: #fff5df;
+  color: #a56a00;
+}
+
+.admin-status.progress {
+  background: #eaf2ff;
+  color: #2865e8;
+}
+
+.admin-status.resolved {
+  background: #e8f8ef;
+  color: #198754;
+}
+
+/* =========================================================
+   RECURRING ISSUES
+========================================================= */
+
+.admin-recurring-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-recurring-item {
+  padding: 15px;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+}
+
+.admin-recurring-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-recurring-top strong {
+  color: #263a57;
+  font-size: 14px;
+}
+
+.admin-severity {
+  padding: 5px 9px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.admin-severity.high {
+  background: #ffe9e9;
+  color: #c62828;
+}
+
+.admin-severity.medium {
+  background: #fff4df;
+  color: #a56a00;
+}
+
+.admin-recurring-item p {
+  margin: 8px 0 0;
+  color: #7d899b;
+  font-size: 12px;
+}
+
+/* =========================================================
+   WORKLOAD
+========================================================= */
+
+.admin-workload {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-workload-row {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.admin-workload-label {
+  display: flex;
+  justify-content: space-between;
+  color: #58677d;
+  font-size: 12px;
+}
+
+.admin-progress {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #edf1f6;
+}
+
+.admin-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #426ee8;
+}
+
+/* =========================================================
+   QUICK ACTIONS
+========================================================= */
+
+.admin-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.admin-action {
+  border: 1px solid #e5eaf2;
+  background: #ffffff;
+  border-radius: 13px;
+  padding: 17px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.admin-action:hover {
+  border-color: #bfcff0;
+  background: #f8faff;
+  transform: translateY(-1px);
+}
+
+.admin-action strong {
+  display: block;
+  color: #253b5b;
+  font-size: 14px;
+}
+
+.admin-action span {
+  display: block;
+  margin-top: 5px;
+  color: #8793a6;
+  font-size: 11px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+  .admin-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-dashboard {
+    padding: 20px;
+  }
+
+  .admin-dashboard-header {
+    flex-direction: column;
+  }
+
+  .admin-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-actions {
+    grid-template-columns: 1fr;
+  }
+}

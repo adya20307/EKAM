@@ -1,0 +1,832 @@
+.hostel-admin-page {
+  min-height: 100%;
+  padding: 34px 38px 60px;
+  background: #f6f8fc;
+  color: #17233c;
+}
+
+/* HEADER */
+
+.hostel-admin-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.hostel-admin-eyebrow {
+  display: block;
+  margin-bottom: 7px;
+  color: #68758c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.hostel-admin-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.hostel-admin-header p {
+  margin: 8px 0 0;
+  color: #7b869b;
+  font-size: 14px;
+}
+
+.hostel-admin-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid #dfe9e4;
+  border-radius: 22px;
+  background: white;
+  color: #26734b;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.hostel-admin-status span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #28a765;
+}
+
+/* STATS */
+
+.hostel-admin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+  margin-bottom: 22px;
+}
+
+.hostel-stat-card {
+  padding: 20px 22px;
+  border: 1px solid #e6eaf1;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(23, 35, 60, 0.04);
+}
+
+.hostel-stat-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: #77839a;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.hostel-stat-card strong {
+  display: block;
+  color: #17233c;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.hostel-stat-card small {
+  display: block;
+  margin-top: 5px;
+  color: #9aa3b2;
+  font-size: 11px;
+}
+
+/* GRID */
+
+.hostel-admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* CARD */
+
+.hostel-admin-card {
+  border: 1px solid #e5e9f0;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(23, 35, 60, 0.045);
+  overflow: hidden;
+}
+
+.hostel-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 21px 22px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.hostel-card-header h2 {
+  margin: 0;
+  color: #17233c;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.hostel-card-header p {
+  margin: 5px 0 0;
+  color: #8993a6;
+  font-size: 12px;
+}
+
+.hostel-card-header button {
+  border: 0;
+  background: transparent;
+  color: #5367d8;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+/* LIST */
+
+.hostel-list {
+  padding: 5px 22px 12px;
+}
+
+.hostel-list > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f2f6;
+}
+
+.hostel-list > div:last-child {
+  border-bottom: 0;
+}
+
+.hostel-list-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  background: #f1f3ff;
+  font-size: 17px;
+}
+
+.hostel-list strong {
+  display: block;
+  color: #34415a;
+  font-size: 13px;
+}
+
+.hostel-list small {
+  display: block;
+  margin-top: 4px;
+  color: #929bad;
+  font-size: 11px;
+}
+
+/* MESS */
+
+.hostel-mess-box {
+  padding: 8px 22px 16px;
+}
+
+.hostel-mess-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #f0f2f6;
+}
+
+.hostel-mess-item:last-child {
+  border-bottom: 0;
+}
+
+.hostel-mess-item > span:first-child {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  background: #f1f3ff;
+  font-size: 17px;
+}
+
+.hostel-mess-item strong {
+  display: block;
+  color: #34415a;
+  font-size: 13px;
+}
+
+.hostel-mess-item small {
+  display: block;
+  margin-top: 4px;
+  color: #929bad;
+  font-size: 11px;
+}
+
+.hostel-warning {
+  margin-left: auto;
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: #fff0e1;
+  color: #bd7213;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+/* GATE PASS */
+
+.hostel-pass-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px 22px 12px;
+}
+
+.hostel-pass-summary > div {
+  padding: 15px 10px;
+  text-align: center;
+  border: 1px solid #edf0f5;
+  border-radius: 10px;
+  background: #fafbfc;
+}
+
+.hostel-pass-summary strong {
+  display: block;
+  color: #17233c;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.hostel-pass-summary span {
+  display: block;
+  margin-top: 4px;
+  color: #8c96a8;
+  font-size: 10px;
+}
+
+.hostel-pass-note {
+  margin: 5px 22px 20px;
+  padding: 12px 14px;
+
+  border-radius: 9px;
+  background: #f5f7ff;
+  color: #63708a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ALERTS */
+
+.hostel-alert-card {
+  margin-top: 20px;
+}
+
+.hostel-alerts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 20px 22px 22px;
+}
+
+.hostel-alerts > div {
+  display: flex;
+  gap: 11px;
+  padding: 15px;
+  border: 1px solid #edf0f5;
+  border-radius: 10px;
+  background: #fafbfc;
+}
+
+.hostel-alerts > div > span {
+  font-size: 17px;
+}
+
+.hostel-alerts strong {
+  display: block;
+  color: #34415a;
+  font-size: 12px;
+}
+
+.hostel-alerts small {
+  display: block;
+  margin-top: 5px;
+  color: #929bad;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .hostel-admin-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hostel-alerts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .hostel-admin-page {
+    padding: 25px 20px 50px;
+  }
+
+  .hostel-admin-header {
+    flex-direction: column;
+  }
+
+  .hostel-admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .hostel-admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hostel-pass-summary {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================================
+   HOSTEL FUNCTIONAL MODULES
+========================================================= */
+
+.hostel-primary-btn {
+  border: 0;
+  background: #315fd4;
+  color: #fff;
+  border-radius: 9px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hostel-primary-btn:hover {
+  background: #244ebd;
+}
+
+.hostel-secondary-btn {
+  border: 1px solid #dce2eb;
+  background: #fff;
+  color: #596477;
+  border-radius: 9px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hostel-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.hostel-modal {
+  width: min(720px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 25px 70px rgba(15, 23, 42, 0.25);
+}
+
+.hostel-modal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 24px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.hostel-modal-header h2 {
+  margin: 0;
+  color: #1d2638;
+  font-size: 19px;
+}
+
+.hostel-modal-header p {
+  margin: 5px 0 0;
+  color: #8a92a2;
+  font-size: 12px;
+}
+
+.hostel-modal-close {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  background: #f3f5f8;
+  color: #687386;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.hostel-modal-form {
+  padding: 24px;
+}
+
+.hostel-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.hostel-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #465166;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hostel-form-grid input,
+.hostel-form-grid select,
+.hostel-form-grid textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfe4ec;
+  border-radius: 9px;
+  padding: 11px 12px;
+  background: #fff;
+  color: #263044;
+  font-family: inherit;
+  font-size: 12px;
+  outline: none;
+}
+
+.hostel-form-grid input:focus,
+.hostel-form-grid select:focus,
+.hostel-form-grid textarea:focus {
+  border-color: #315fd4;
+  box-shadow: 0 0 0 3px rgba(49, 95, 212, 0.08);
+}
+
+.hostel-form-grid textarea {
+  resize: vertical;
+}
+
+.hostel-form-full {
+  grid-column: 1 / -1;
+}
+
+.hostel-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #edf0f4;
+}
+
+/* ROOM */
+
+.hostel-room-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.hostel-room-card {
+  border: 1px solid #edf0f4;
+  border-radius: 13px;
+  padding: 16px;
+  background: #fff;
+}
+
+.hostel-room-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hostel-room-top strong {
+  display: block;
+  color: #253047;
+  font-size: 14px;
+}
+
+.hostel-room-top small {
+  display: block;
+  margin-top: 3px;
+  color: #9099a8;
+  font-size: 10px;
+}
+
+.hostel-room-full,
+.hostel-room-vacant,
+.hostel-room-available {
+  height: fit-content;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.hostel-room-full {
+  background: #ffe9e9;
+  color: #c0392b;
+}
+
+.hostel-room-vacant {
+  background: #edf7ef;
+  color: #2e7d4f;
+}
+
+.hostel-room-available {
+  background: #eef4ff;
+  color: #315fd4;
+}
+
+.hostel-room-occupancy {
+  margin-top: 18px;
+}
+
+.hostel-room-occupancy strong {
+  color: #263044;
+  font-size: 20px;
+}
+
+.hostel-room-occupancy span {
+  margin-left: 6px;
+  color: #9099a8;
+  font-size: 10px;
+}
+
+.hostel-room-students {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 13px 0;
+}
+
+.hostel-room-students span {
+  color: #687386;
+  font-size: 10px;
+}
+
+.hostel-room-card button {
+  width: 100%;
+  border: 1px solid #dfe4ec;
+  background: #fff;
+  color: #315fd4;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* COMPLAINTS */
+
+.hostel-complaint-list,
+.hostel-gate-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hostel-complaint-row,
+.hostel-gate-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto auto auto;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.hostel-complaint-row:last-child,
+.hostel-gate-row:last-child {
+  border-bottom: 0;
+}
+
+.hostel-complaint-row strong,
+.hostel-gate-row strong {
+  display: block;
+  color: #263044;
+  font-size: 12px;
+}
+
+.hostel-complaint-row small,
+.hostel-gate-row small {
+  display: block;
+  margin-top: 4px;
+  color: #8b94a4;
+  font-size: 10px;
+}
+
+.hostel-priority-high,
+.hostel-priority-medium {
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.hostel-priority-high {
+  background: #ffe8e8;
+  color: #c0392b;
+}
+
+.hostel-priority-medium {
+  background: #fff5df;
+  color: #a96c00;
+}
+
+.hostel-complaint-status,
+.hostel-pass-status {
+  color: #536075;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.hostel-complaint-row select {
+  border: 1px solid #dfe4ec;
+  border-radius: 7px;
+  padding: 7px;
+  color: #536075;
+  background: #fff;
+  font-size: 9px;
+}
+
+/* MESS */
+
+.hostel-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+}
+
+.hostel-menu-grid > div {
+  padding: 16px;
+  border: 1px solid #edf0f4;
+  border-radius: 12px;
+}
+
+.hostel-menu-grid span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.hostel-menu-grid strong {
+  display: block;
+  color: #263044;
+  font-size: 12px;
+}
+
+.hostel-menu-grid p {
+  margin: 7px 0 0;
+  color: #7c8697;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.hostel-feedback-list > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.hostel-feedback-list strong,
+.hostel-feedback-list small {
+  display: block;
+}
+
+.hostel-feedback-list strong {
+  color: #263044;
+  font-size: 11px;
+}
+
+.hostel-feedback-list small {
+  margin-top: 4px;
+  color: #8b94a4;
+  font-size: 9px;
+}
+
+.hostel-feedback-list p {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #657084;
+  font-size: 10px;
+}
+
+/* GATE PASS */
+
+.hostel-gate-row {
+  grid-template-columns: minmax(230px, 1fr) auto auto auto;
+}
+
+.hostel-gate-row.emergency {
+  padding-left: 12px;
+  border-left: 3px solid #dc3c3c;
+}
+
+.hostel-emergency-badge,
+.hostel-normal-badge {
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.hostel-emergency-badge {
+  background: #ffe8e8;
+  color: #c0392b;
+}
+
+.hostel-normal-badge {
+  background: #eef4ff;
+  color: #315fd4;
+}
+
+.hostel-pass-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.hostel-approve-btn,
+.hostel-reject-btn {
+  border: 0;
+  border-radius: 7px;
+  padding: 7px 10px;
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hostel-approve-btn {
+  background: #eaf7ef;
+  color: #287749;
+}
+
+.hostel-reject-btn {
+  background: #ffeaea;
+  color: #c0392b;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .hostel-room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hostel-menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hostel-complaint-row,
+  .hostel-gate-row {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hostel-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hostel-form-full {
+    grid-column: auto;
+  }
+
+  .hostel-room-grid,
+  .hostel-menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hostel-modal {
+    max-height: 94vh;
+  }
+
+  .hostel-modal-form {
+    padding: 18px;
+  }
+}

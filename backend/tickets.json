@@ -1,0 +1,167 @@
+[
+  {
+    "id": "EKAM-1001",
+    "message": "My hostel Wi-Fi is not working since yesterday",
+    "type": "complaint",
+    "category": "hostel",
+    "subcategory": "Wi-Fi / Internet",
+    "priority": "high",
+    "authority": "IT / Network Team",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-03T19:06:31.184Z"
+  },
+  {
+    "id": "EKAM-1002",
+    "message": "My hostel Wi-Fi is not working since yesterday",
+    "type": "complaint",
+    "category": "hostel",
+    "subcategory": "Wi-Fi / Internet",
+    "priority": "high",
+    "authority": "IT / Network Team",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-03T19:11:27.171Z"
+  },
+  {
+    "id": "EKAM-1003",
+    "message": "My hostel internet has stopped working and I need help",
+    "type": "complaint",
+    "category": "hostel",
+    "subcategory": "internet/Wi-Fi failure",
+    "priority": "medium",
+    "authority": "IT / Network Team",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T10:40:29.711Z"
+  },
+  {
+    "id": "EKAM-1004",
+    "message": "My hostel Wi-Fi is not working",
+    "type": "complaint",
+    "category": "IT",
+    "subcategory": "hostel Wi-Fi not working",
+    "priority": "medium",
+    "authority": "IT / Network Team",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T12:39:05.767Z"
+  },
+  {
+    "id": "EKAM-1005",
+    "message": "My hostel Wi-Fi is not working",
+    "type": "complaint",
+    "category": "other",
+    "subcategory": "General complaint",
+    "priority": "medium",
+    "authority": "Campus Administration",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T16:16:52.839Z"
+  },
+  {
+    "id": "EKAM-1006",
+    "message": "my hostel wi-fi is not working",
+    "type": "complaint",
+    "category": "other",
+    "subcategory": "General complaint",
+    "priority": "medium",
+    "authority": "Campus Administration",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T16:19:09.686Z"
+  },
+  {
+    "id": "EKAM-1007",
+    "message": "my Wi-Fi is not working",
+    "type": "complaint",
+    "category": "other",
+    "subcategory": "General complaint",
+    "priority": "medium",
+    "authority": "Campus Administration",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T16:33:32.556Z"
+  },
+  {
+    "id": "EKAM-1008",
+    "message": "My hostel Wi-Fi is not working",
+    "type": "complaint",
+    "category": "other",
+    "subcategory": "General complaint",
+    "priority": "medium",
+    "authority": "Campus Administration",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T17:21:15.111Z"
+  },
+  {
+    "id": "EKAM-1009",
+    "message": "My hostel Wi-Fi is not working",
+    "type": "complaint",
+    "category": "other",
+    "subcategory": "General complaint",
+    "priority": "medium",
+    "authority": "Campus Administration",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T17:24:41.970Z"
+  },
+  {
+    "id": "EKAM-1010",
+    "message": "My hostel Wi-Fi is not working",
+    "type": "complaint",
+    "category": "other",
+    "subcategory": "General complaint",
+    "priority": "medium",
+    "authority": "Campus Administration",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T17:27:48.048Z"
+  },
+  {
+    "id": "EKAM-1011",
+    "message": "My hostel Wi-Fi is not working",
+    "type": "complaint",
+    "category": "IT",
+    "subcategory": "Wi-Fi / Network Issue",
+    "priority": "medium",
+    "authority": "IT / Network Team",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T17:31:05.068Z"
+  },
+  {
+    "id": "EKAM-1012",
+    "message": "can my hostel Wi-Fi is not working",
+    "type": "complaint",
+    "category": "IT",
+    "subcategory": "Wi-Fi / Network Issue",
+    "priority": "medium",
+    "authority": "IT / Network Team",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T17:34:13.291Z"
+  },
+  {
+    "id": "EKAM-1013",
+    "message": "Bonafide certificate",
+    "type": "complaint",
+    "category": "other",
+    "subcategory": "General complaint",
+    "priority": "medium",
+    "authority": "Campus Administration",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-04T17:35:21.720Z"
+  },
+  {
+    "id": "EKAM-1014",
+    "message": "Wi-Fi is not working properly",
+    "type": "complaint",
+    "category": "IT",
+    "subcategory": "Wi-Fi / Network Issue",
+    "priority": "medium",
+    "authority": "IT / Network Team",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-08T18:24:14.927Z"
+  },
+  {
+    "id": "EKAM-1015",
+    "message": "my hostel tap is leaking",
+    "type": "complaint",
+    "category": "other",
+    "subcategory": "General complaint",
+    "priority": "medium",
+    "authority": "Campus Administration",
+    "status": "SUBMITTED",
+    "createdAt": "2026-10-08T18:33:24.546Z"
+  }
+]

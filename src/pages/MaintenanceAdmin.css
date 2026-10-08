@@ -1,0 +1,1217 @@
+/* =========================================================
+   EKAM — MAINTENANCE ADMIN
+========================================================= */
+
+.maintenance-admin-page {
+  min-height: calc(100vh - 80px);
+  padding: 32px 38px 70px;
+  background: #f7f9fc;
+  color: #172b4d;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.maintenance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.maintenance-eyebrow {
+  color: #667085;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.maintenance-header h1 {
+  margin: 7px 0;
+  font-size: 31px;
+  line-height: 1.15;
+  color: #172b4d;
+}
+
+.maintenance-header p {
+  margin: 0;
+  max-width: 680px;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.maintenance-system-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 13px;
+
+  border: 1px solid #d1fadf;
+  border-radius: 999px;
+
+  background: #ecfdf3;
+
+  color: #027a48;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.maintenance-system-status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #12b76a;
+}
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.maintenance-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.maintenance-stat-card {
+  padding: 19px;
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(16, 24, 40, 0.04);
+}
+
+.maintenance-stat-card span {
+  display: block;
+  color: #667085;
+  font-size: 11px;
+}
+
+.maintenance-stat-card strong {
+  display: block;
+  margin: 8px 0 4px;
+  color: #172b4d;
+  font-size: 28px;
+}
+
+.maintenance-stat-card small {
+  color: #98a2b3;
+  font-size: 10px;
+}
+
+.maintenance-stat-card.danger strong {
+  color: #b42318;
+}
+
+/* =========================================================
+   QUICK ACTIONS
+========================================================= */
+
+.maintenance-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.maintenance-quick-grid button {
+  min-height: 140px;
+  padding: 19px;
+
+  text-align: left;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 15px;
+
+  background: #fff;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.maintenance-quick-grid button:hover {
+  transform: translateY(-2px);
+  border-color: #4f46e5;
+  box-shadow: 0 8px 22px rgba(16, 24, 40, 0.08);
+}
+
+.maintenance-quick-grid span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.maintenance-quick-grid strong {
+  display: block;
+  font-size: 14px;
+  color: #172b4d;
+}
+
+.maintenance-quick-grid small {
+  display: block;
+  margin-top: 6px;
+  color: #667085;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   TWO COLUMN
+========================================================= */
+
+.maintenance-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* =========================================================
+   PANEL
+========================================================= */
+
+.maintenance-panel {
+  padding: 22px;
+  margin-bottom: 20px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 17px;
+
+  background: #fff;
+
+  box-shadow: 0 4px 16px rgba(16, 24, 40, 0.04);
+}
+
+.maintenance-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.maintenance-panel-header h2 {
+  margin: 0;
+  font-size: 17px;
+  color: #172b4d;
+}
+
+.maintenance-panel-header p {
+  margin: 5px 0 0;
+  color: #667085;
+  font-size: 11px;
+}
+
+.maintenance-link-btn {
+  border: 0;
+  background: transparent;
+  color: #4f46e5;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.maintenance-list,
+.recurring-mini-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.maintenance-list-item {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 13px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+
+  background: #fff;
+
+  text-align: left;
+  cursor: pointer;
+}
+
+.maintenance-list-item:hover {
+  border-color: #c7d2fe;
+  background: #f8faff;
+}
+
+.maintenance-list-item strong,
+.maintenance-list-item small {
+  display: block;
+}
+
+.maintenance-list-item strong {
+  color: #172b4d;
+  font-size: 12px;
+}
+
+.maintenance-list-item small {
+  margin-top: 4px;
+  color: #98a2b3;
+  font-size: 10px;
+}
+
+.recurring-mini-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+
+  border-bottom: 1px solid #eaecf0;
+}
+
+.recurring-mini-item:last-child {
+  border-bottom: 0;
+}
+
+.recurring-mini-item strong,
+.recurring-mini-item small {
+  display: block;
+}
+
+.recurring-mini-item strong {
+  color: #172b4d;
+  font-size: 12px;
+}
+
+.recurring-mini-item small {
+  margin-top: 4px;
+  color: #98a2b3;
+  font-size: 10px;
+}
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.maintenance-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.maintenance-badge.high {
+  background: #fff1f0;
+  color: #b42318;
+}
+
+.maintenance-badge.medium {
+  background: #fff7ed;
+  color: #b54708;
+}
+
+.maintenance-badge.low {
+  background: #f2f4f7;
+  color: #667085;
+}
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.maintenance-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.maintenance-toolbar input {
+  flex: 1;
+
+  padding: 11px 13px;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.maintenance-toolbar input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
+}
+
+.maintenance-toolbar-info {
+  color: #667085;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.maintenance-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.maintenance-table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+}
+
+.maintenance-table th {
+  padding: 11px;
+
+  background: #f8fafc;
+
+  color: #667085;
+
+  text-align: left;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.maintenance-table td {
+  padding: 13px 11px;
+
+  border-top: 1px solid #eaecf0;
+
+  color: #475467;
+
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.maintenance-table td strong,
+.maintenance-table td small {
+  display: block;
+}
+
+.maintenance-table td strong {
+  color: #172b4d;
+  font-size: 11px;
+}
+
+.maintenance-table td small {
+  margin-top: 3px;
+  color: #98a2b3;
+  font-size: 9px;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.maintenance-status {
+  display: inline-block;
+
+  padding: 5px 8px;
+
+  border-radius: 999px;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.maintenance-status.open {
+  background: #fff7ed;
+  color: #b54708;
+}
+
+.maintenance-status.assigned {
+  background: #eef4ff;
+  color: #175cd3;
+}
+
+.maintenance-status.in-progress {
+  background: #f4f3ff;
+  color: #5925dc;
+}
+
+.maintenance-status.resolved,
+.maintenance-status.active {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.maintenance-primary-btn {
+  border: 0;
+  border-radius: 9px;
+
+  padding: 10px 15px;
+
+  background: #4f46e5;
+  color: #fff;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.maintenance-primary-btn:hover {
+  background: #4338ca;
+}
+
+.maintenance-primary-btn.full {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.maintenance-small-btn {
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+
+  padding: 7px 10px;
+
+  background: #fff;
+  color: #475467;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.maintenance-small-btn:hover {
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+.maintenance-small-btn.full {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.maintenance-success-btn,
+.maintenance-warning-btn {
+  border: 0;
+  border-radius: 9px;
+
+  padding: 10px 14px;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.maintenance-success-btn {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+.maintenance-warning-btn {
+  background: #fff7ed;
+  color: #b54708;
+}
+
+/* =========================================================
+   CATEGORY CARDS
+========================================================= */
+
+.maintenance-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.maintenance-category-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 17px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 13px;
+}
+
+.category-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: #f4f3ff;
+
+  font-size: 20px;
+}
+
+.maintenance-category-card > div:nth-child(2) {
+  flex: 1;
+}
+
+.maintenance-category-card strong,
+.maintenance-category-card small {
+  display: block;
+}
+
+.maintenance-category-card strong {
+  color: #172b4d;
+  font-size: 13px;
+}
+
+.maintenance-category-card small {
+  margin-top: 4px;
+  color: #667085;
+  font-size: 10px;
+}
+
+/* =========================================================
+   TECHNICIANS
+========================================================= */
+
+.maintenance-technician-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.technician-card {
+  padding: 18px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+
+  background: #fff;
+}
+
+.technician-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technician-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.technician-card h3 {
+  margin: 14px 0 4px;
+
+  color: #172b4d;
+  font-size: 14px;
+}
+
+.technician-card p {
+  margin: 0;
+
+  color: #667085;
+  font-size: 10px;
+}
+
+.technician-availability {
+  display: inline-block;
+
+  padding: 5px 8px;
+
+  border-radius: 999px;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.technician-availability.available {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+.technician-availability.busy {
+  background: #fff7ed;
+  color: #b54708;
+}
+
+.technician-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px;
+
+  margin-top: 17px;
+}
+
+.technician-stats div {
+  padding: 10px;
+
+  border-radius: 8px;
+
+  background: #f8fafc;
+}
+
+.technician-stats strong,
+.technician-stats small {
+  display: block;
+}
+
+.technician-stats strong {
+  color: #172b4d;
+  font-size: 16px;
+}
+
+.technician-stats small {
+  margin-top: 3px;
+  color: #98a2b3;
+  font-size: 9px;
+}
+
+/* =========================================================
+   ASSIGNMENTS
+========================================================= */
+
+.assignment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.assignment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 18px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 13px;
+}
+
+.assignment-main {
+  flex: 1;
+}
+
+.assignment-id {
+  color: #4f46e5;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.assignment-main h3 {
+  margin: 5px 0;
+
+  color: #172b4d;
+  font-size: 14px;
+}
+
+.assignment-main p {
+  margin: 0 0 10px;
+
+  color: #667085;
+  font-size: 10px;
+}
+
+.assignment-control {
+  width: 250px;
+}
+
+.assignment-control label,
+.complaint-action-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #475467;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.assignment-control select,
+.complaint-action-grid select {
+  padding: 10px;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+
+  background: #fff;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 10px;
+}
+
+/* =========================================================
+   RECURRING
+========================================================= */
+
+.recurring-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.recurring-summary > div {
+  padding: 19px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+
+  background: #fff;
+}
+
+.recurring-summary span {
+  display: block;
+  color: #667085;
+  font-size: 10px;
+}
+
+.recurring-summary strong {
+  display: block;
+  margin-top: 7px;
+
+  color: #172b4d;
+  font-size: 26px;
+}
+
+/* =========================================================
+   REPORTS
+========================================================= */
+
+.maintenance-report-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.maintenance-report-grid > div {
+  padding: 20px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+
+  background: #fff;
+}
+
+.maintenance-report-grid span {
+  display: block;
+  color: #667085;
+  font-size: 10px;
+}
+
+.maintenance-report-grid strong {
+  display: block;
+  margin-top: 8px;
+
+  color: #172b4d;
+  font-size: 25px;
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.maintenance-empty {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.maintenance-empty > span {
+  width: 48px;
+  height: 48px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ecfdf3;
+  color: #027a48;
+
+  font-size: 20px;
+}
+
+.maintenance-empty h3 {
+  margin: 0;
+
+  color: #172b4d;
+  font-size: 16px;
+}
+
+.maintenance-empty p {
+  color: #667085;
+  font-size: 11px;
+}
+
+/* =========================================================
+   MODALS
+========================================================= */
+
+.maintenance-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  backdrop-filter: blur(4px);
+}
+
+.maintenance-modal {
+  width: min(500px, 100%);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  padding: 24px;
+
+  border-radius: 18px;
+
+  background: #fff;
+
+  box-shadow: 0 25px 70px rgba(15, 23, 42, 0.25);
+}
+
+.maintenance-modal.large {
+  width: min(680px, 100%);
+}
+
+.maintenance-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #eaecf0;
+}
+
+.maintenance-modal-header span {
+  color: #667085;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.maintenance-modal-header h2 {
+  margin: 5px 0 0;
+
+  color: #172b4d;
+  font-size: 20px;
+}
+
+.maintenance-modal-header p {
+  margin: 5px 0 0;
+
+  color: #667085;
+  font-size: 11px;
+}
+
+.maintenance-modal-header > button {
+  width: 32px;
+  height: 32px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #f2f4f7;
+  color: #667085;
+
+  font-size: 21px;
+
+  cursor: pointer;
+}
+
+.maintenance-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.maintenance-modal label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #475467;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.maintenance-modal input,
+.maintenance-modal select,
+.maintenance-modal textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px 11px;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #172b4d;
+  background: #fff;
+
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.maintenance-modal input:focus,
+.maintenance-modal select:focus,
+.maintenance-modal textarea:focus {
+  border-color: #4f46e5;
+
+  box-shadow:
+    0 0 0 3px rgba(79, 70, 229, 0.08);
+}
+
+/* =========================================================
+   COMPLAINT DETAILS
+========================================================= */
+
+.complaint-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+
+  margin-bottom: 22px;
+}
+
+.complaint-detail-grid > div {
+  padding: 13px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 9px;
+
+  background: #f8fafc;
+}
+
+.complaint-detail-grid span,
+.complaint-detail-grid strong {
+  display: block;
+}
+
+.complaint-detail-grid span {
+  color: #98a2b3;
+  font-size: 9px;
+}
+
+.complaint-detail-grid strong {
+  margin-top: 5px;
+
+  color: #172b4d;
+  font-size: 12px;
+}
+
+.complaint-action-section {
+  padding-top: 18px;
+
+  border-top: 1px solid #eaecf0;
+}
+
+.complaint-action-section h3 {
+  margin: 0 0 15px;
+
+  color: #172b4d;
+  font-size: 14px;
+}
+
+.complaint-action-grid {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.complaint-action-grid label {
+  flex: 1;
+}
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+.maintenance-toast {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 13px 18px;
+
+  border-radius: 12px;
+
+  background: #172b4d;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.2);
+
+  animation: maintenanceToastIn 0.25s ease;
+}
+
+.maintenance-toast span {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #12b76a;
+  color: #fff;
+
+  font-weight: 800;
+}
+
+@keyframes maintenanceToastIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+  .maintenance-stats,
+  .maintenance-quick-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .maintenance-technician-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .maintenance-report-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .maintenance-admin-page {
+    padding: 22px 16px 50px;
+  }
+
+  .maintenance-header {
+    flex-direction: column;
+  }
+
+  .maintenance-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .maintenance-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assignment-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .assignment-control {
+    width: 100%;
+  }
+
+  .complaint-action-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 600px) {
+  .maintenance-stats,
+  .maintenance-quick-grid,
+  .maintenance-technician-grid,
+  .maintenance-report-grid,
+  .recurring-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .maintenance-header h1 {
+    font-size: 26px;
+  }
+
+  .maintenance-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .complaint-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

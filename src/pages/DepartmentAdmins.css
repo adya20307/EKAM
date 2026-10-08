@@ -1,0 +1,630 @@
+/* =========================================================
+   DEPARTMENT ADMINS — ADMIN DIRECTORY
+   ========================================================= */
+
+.department-admins-page {
+  min-height: 100%;
+  padding: 34px 38px 60px;
+  background: #f6f8fc;
+  color: #17233c;
+}
+
+/* HEADER */
+
+.department-admins-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.department-admins-eyebrow {
+  margin-bottom: 7px;
+  color: #65708a;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.department-admins-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.department-admins-header p {
+  margin: 8px 0 0;
+  color: #78839a;
+  font-size: 14px;
+}
+
+.department-admins-add {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: #17233c;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.department-admins-add:hover {
+  background: #263657;
+  transform: translateY(-1px);
+}
+
+/* SUMMARY */
+
+.department-admins-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.department-admins-summary > div {
+  background: white;
+  border: 1px solid #e7ebf2;
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 3px 12px rgba(24, 35, 60, 0.04);
+}
+
+.department-admins-summary span {
+  display: block;
+  color: #7b869b;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.department-admins-summary strong {
+  color: #17233c;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* MAIN CARD */
+
+.department-admins-card {
+  background: white;
+  border: 1px solid #e6eaf1;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(23, 35, 60, 0.05);
+}
+
+/* TOOLBAR */
+
+.department-admins-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.department-admin-search {
+  flex: 1;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  border: 1px solid #dfe4ed;
+  border-radius: 9px;
+  background: #fafbfc;
+}
+
+.department-admin-search span {
+  color: #8b95a8;
+  font-size: 18px;
+}
+
+.department-admin-search input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #17233c;
+  font-size: 13px;
+}
+
+.department-admin-search input::placeholder {
+  color: #9aa3b3;
+}
+
+.department-admins-toolbar select {
+  width: 210px;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #dfe4ed;
+  border-radius: 9px;
+  outline: none;
+  background: white;
+  color: #46536b;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* COUNT */
+
+.department-admins-count {
+  padding: 14px 20px;
+  color: #7b8699;
+  font-size: 12px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.department-admins-count strong {
+  color: #17233c;
+}
+
+/* TABLE */
+
+.department-admin-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.department-admin-table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.department-admin-table thead {
+  background: #f8f9fc;
+}
+
+.department-admin-table th {
+  padding: 13px 16px;
+  text-align: left;
+  color: #7b8699;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  white-space: nowrap;
+}
+
+.department-admin-table td {
+  padding: 16px;
+  border-top: 1px solid #edf0f5;
+  color: #536078;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.department-admin-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.department-admin-table tbody tr:hover {
+  background: #fafbfe;
+}
+
+/* ADMIN */
+
+.department-admin-person {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 180px;
+}
+
+.department-admin-avatar {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #17233c;
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.department-admin-person strong {
+  display: block;
+  color: #17233c;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.department-admin-person span {
+  display: block;
+  margin-top: 3px;
+  color: #929bad;
+  font-size: 11px;
+}
+
+/* DEPARTMENT */
+
+.department-admin-department {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #34415a;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.department-admin-department span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f0f3ff;
+  font-size: 15px;
+}
+
+/* FACULTY ID */
+
+.department-admin-faculty-id {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: #f1f3f7;
+  color: #455169;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* STATUS */
+
+.department-admin-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #e7f8ef;
+  color: #17844e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+/* ACTIONS */
+
+.department-admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.department-admin-actions button {
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.department-admin-edit {
+  border: 1px solid #dce2eb;
+  background: white;
+  color: #34415a;
+}
+
+.department-admin-edit:hover {
+  background: #f4f6fa;
+}
+
+.department-admin-remove {
+  border: 1px solid #f2cccc;
+  background: #fff7f7;
+  color: #c13f3f;
+}
+
+.department-admin-remove:hover {
+  background: #ffecec;
+}
+
+/* EMPTY */
+
+.department-admins-empty {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.department-admins-empty > div {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #f0f3f8;
+  font-size: 25px;
+}
+
+.department-admins-empty h3 {
+  margin: 0;
+  color: #17233c;
+  font-size: 16px;
+}
+
+.department-admins-empty p {
+  margin: 7px 0 0;
+  color: #8a94a7;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .department-admins-page {
+    padding: 25px 20px 50px;
+  }
+
+  .department-admins-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .department-admins-header {
+    flex-direction: column;
+  }
+
+  .department-admins-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .department-admins-toolbar select {
+    width: 100%;
+  }
+}
+/* =========================================================
+   ADD / EDIT ADMIN MODAL
+   ========================================================= */
+
+.department-admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(15, 24, 43, 0.48);
+  backdrop-filter: blur(4px);
+}
+
+.department-admin-modal {
+  width: min(620px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background: #ffffff;
+  border-radius: 18px;
+
+  box-shadow: 0 24px 70px rgba(15, 24, 43, 0.22);
+}
+
+/* MODAL HEADER */
+
+.department-admin-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 25px 28px 20px;
+
+  border-bottom: 1px solid #edf0f5;
+}
+
+.department-admin-modal-header span {
+  color: #65708a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.department-admin-modal-header h2 {
+  margin: 5px 0 5px;
+
+  color: #17233c;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.department-admin-modal-header p {
+  margin: 0;
+
+  color: #8993a6;
+  font-size: 13px;
+}
+
+.department-admin-modal-close {
+  width: 34px;
+  height: 34px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #f2f4f8;
+  color: #65708a;
+
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.department-admin-modal-close:hover {
+  background: #e9edf4;
+}
+
+/* FORM */
+
+.department-admin-form {
+  padding: 25px 28px 28px;
+}
+
+.department-admin-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.department-admin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.department-admin-field.full {
+  grid-column: 1 / -1;
+}
+
+.department-admin-field label {
+  color: #46536b;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.department-admin-field label::first-letter {
+  color: #17233c;
+}
+
+.department-admin-field input,
+.department-admin-field select {
+  width: 100%;
+  height: 44px;
+
+  box-sizing: border-box;
+
+  padding: 0 12px;
+
+  border: 1px solid #dfe4ed;
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #fafbfc;
+  color: #17233c;
+
+  font-size: 13px;
+
+  transition: 0.18s ease;
+}
+
+.department-admin-field input:focus,
+.department-admin-field select:focus {
+  border-color: #6374e8;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(99, 116, 232, 0.10);
+}
+
+.department-admin-field input::placeholder {
+  color: #a0a8b7;
+}
+
+/* ERROR */
+
+.department-admin-form-error {
+  margin-top: 18px;
+  padding: 10px 12px;
+
+  border: 1px solid #f1cccc;
+  border-radius: 8px;
+
+  background: #fff5f5;
+  color: #c23f3f;
+
+  font-size: 12px;
+  font-weight: 650;
+}
+
+/* MODAL ACTIONS */
+
+.department-admin-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 25px;
+  padding-top: 20px;
+
+  border-top: 1px solid #edf0f5;
+}
+
+.department-admin-cancel,
+.department-admin-save {
+  min-width: 120px;
+  height: 42px;
+
+  padding: 0 17px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 750;
+
+  cursor: pointer;
+  transition: 0.18s ease;
+}
+
+.department-admin-cancel {
+  border: 1px solid #dce2eb;
+  background: white;
+  color: #536078;
+}
+
+.department-admin-cancel:hover {
+  background: #f5f7fa;
+}
+
+.department-admin-save {
+  border: 0;
+  background: #17233c;
+  color: white;
+}
+
+.department-admin-save:hover {
+  background: #263657;
+}
+
+/* RESPONSIVE MODAL */
+
+@media (max-width: 650px) {
+  .department-admin-modal-header {
+    padding: 20px;
+  }
+
+  .department-admin-form {
+    padding: 20px;
+  }
+
+  .department-admin-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .department-admin-field.full {
+    grid-column: auto;
+  }
+
+  .department-admin-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .department-admin-cancel,
+  .department-admin-save {
+    width: 100%;
+  }
+}
